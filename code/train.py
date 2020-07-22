@@ -55,9 +55,9 @@ parser.add_argument('--temperature', type=float, default=-1, help="tau in paper"
 parser.add_argument('--usegumbel', action='store_true', default=False, help='whether to use gumbel softmax')
 parser.add_argument('--use_SSIM', type=int, default=2, help="0: None, 1: SSIM, 2: MS-SSIM ")
 # Base
-parser.add_argument('--train_batch', default=32, type=int,help="train batch size")
-parser.add_argument('--test_batch', default=32, type=int, help="test batch size")
-parser.add_argument('--epoch', type=int, default=50, help='number of epochs to train for')
+parser.add_argument('--train_batch', default=16, type=int,help="train batch size")
+parser.add_argument('--test_batch', default=16, type=int, help="test batch size")
+parser.add_argument('--epoch', type=int, default=20, help='number of epochs to train for')
 
 parser.add_argument('--margin', type=float, default=0.3, help="margin for triplet loss")
 parser.add_argument('--num_ker', type=int, default=32, help='generator filters in first conv layer')
